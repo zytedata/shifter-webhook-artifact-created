@@ -12,4 +12,5 @@ ARTIFACT_ID=$(echo "${INCOMING_HOOK_BODY}" | jq -r .artifact_id)
 
 wget -O "${ARTIFACT_ID}.tgz" "${DOWNLOAD_URL}"
 tar xvzf "${ARTIFACT_ID}".tgz
+mkdir public
 mv "${ARTIFACT_ID}" public
