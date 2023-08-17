@@ -25,4 +25,4 @@ wget -O "404.css" "${DOWNLOAD_404_CSS_URL}"
 # Place site content into the right folder
 mv "${ARTIFACT_ID}" public
 # Place 404 custom files into the right folder
-mv 404.* public
+#mv 404.* public
